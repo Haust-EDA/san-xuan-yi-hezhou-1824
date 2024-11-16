@@ -4,11 +4,35 @@
 int   main( )
 
 {
-	float a,b,c,x1,x2;
-	scanf("%f %f %f",&a,&b,&c);
-	x1=(-b+sqrt(b*b-4*a*c))/(2*a);
-	x2=(-b-sqrt(b*b-4*a*c))/(2*a);
-	printf("x1=%lf,x2=%lf",x1,x2);
-   return 0;
+	//正三角,倒三角输出九九乘法表
+#include <stdio.h>
+#include <math.h>
+int   main( )
+
+{
+	int i,j,a,b;
+	for(i=1;i<=9;i++)
+	{
+		for(j=1;j<=i;j++)
+			{
+			a=i*j;
+			printf("%d*%d=%-3d ",j,i,a);
+			}
+		printf("\n");
+
+	}
+	for (i=9;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            b=i*j;
+            printf("%d*%d=%-3d ",j,i,b);
+        }
+        printf("\n");
+    }
+    return 0;
+
+
+}
 
 }
