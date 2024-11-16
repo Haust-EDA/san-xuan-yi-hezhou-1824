@@ -1,16 +1,11 @@
-//请在下方输入你的代码：
+//正三角,倒三角输出九九乘法表
 #include <stdio.h>
 #include <math.h>
 int   main( )
 
-{
-	//正三角,倒三角输出九九乘法表
-#include <stdio.h>
-#include <math.h>
-int   main( )
 
 {
-	int i,j,a,b;
+		int i,j,a,b;
 	for(i=1;i<=9;i++)
 	{
 		for(j=1;j<=i;j++)
@@ -31,8 +26,8 @@ int   main( )
         printf("\n");
     }
     return 0;
-
-
 }
 
-}
+
+
+
